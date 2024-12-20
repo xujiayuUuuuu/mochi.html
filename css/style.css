@@ -207,7 +207,7 @@ img {
 
 .footer-container{
     justify-content: right;
-   flex-direction: column;
+   flex-direction:column;
    gap: 20px;
 }
 
