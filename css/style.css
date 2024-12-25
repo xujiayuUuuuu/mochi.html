@@ -68,21 +68,15 @@ img {
     margin-top: 20px;
     color: #666;
 }
-.carousel-control-prev {
+.carousel-control-prev{
    padding: 0px;
-   background-color: #fff;
-   border: none;
-   margin-left: 650px;
-   margin-right: 100px;
-   margin-top: 20px;
-   margin-bottom: 40px;
-   
+   border: none;  
+   position: left;
 }
-.carousel-control-next{
-    padding: 0px;
-   background-color: #fff;
-   border: none;
- }
+.carousel-inner img{
+    height: 720px;
+    width: 100%;
+}
 /* 最新消息 */
 .news {
     position: relative;
@@ -177,7 +171,6 @@ img {
     font-size: 14px;
     margin: 10px;
 }
-
 /* 節慶禮盒 */
 .gifts {
     padding: 30px 20px;
