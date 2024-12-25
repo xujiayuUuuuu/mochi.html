@@ -36,7 +36,7 @@ img {
 }
 
 .logo img {
-    height: 40px;
+    height: 50px;
 }
 
 .nav ul {
@@ -72,7 +72,7 @@ img {
    padding: 0px;
    background-color: #fff;
    border: none;
-   margin-left: 700px;
+   margin-left: 650px;
    margin-right: 100px;
    margin-top: 20px;
    margin-bottom: 40px;
@@ -92,21 +92,38 @@ img {
     gap: 20px;
     
 }
+.news h2{
+    text-align: left;
+    margin-bottom: 20px;
+    gap: 30px;
+    color:#030303;
+ margin-top: 20px;
 
-.news1container{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
 }
+
 .text{
-    text-align: center;
+    text-align: left;
     font-weight: 400;
+    margin-left: 560px;
     padding: 10px 20px;
-    gap: 20px;
+    gap: 40px;
     justify-content: left;
     letter-spacing: 5px;
     
 }
+.text button{
+    padding: 0%;
+    background-color: #fff;
+    border: none;
+}
+.text p{
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 500px;
+    margin-bottom: 0px;
+}
+
+
 .text ul {
     margin-top: 10px;
 }
@@ -120,13 +137,19 @@ img {
 .products {
     padding: 30px 20px;
     background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .products h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    gap: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    gap: 30px;
+    color:#050505;
+    margin-left: 40px;
     display: inline-block;
+    margin-top: 0px;
+
 }
 
 .product-list {
@@ -162,9 +185,20 @@ img {
     margin: 10px;
 }
 
-.gifts h2 {
-    text-align: center;
+.gifts h1 {
+    text-align: left;
     margin-bottom: 20px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.gifts h2{
+    text-align: left;
+    margin-bottom: 2px;
+    gap: 3px;
+    size: 10px;
+    color:#050505;
+    display: inline-block;
+    margin-top: 0px;
 }
 
 .gift-list {
@@ -187,7 +221,8 @@ img {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 .gift-button:hover {
     background:#ddd;
@@ -198,9 +233,11 @@ img {
   margin-bottom: 20px;
 }
 
+
+
 /* Footer */
 .footer {
-    text-align: right;
+    
     padding: 90px;
     background-color:#ececec
 }
@@ -208,8 +245,27 @@ img {
 .footer-container{
     justify-content: right;
    flex-direction:column;
-   gap: 20px;
+   gap: 2px;
 }
-
+.footer img{
+     size:30%;
+    text-align: right;
+    margin-top: 300px;
+}
+.footer p{
+    margin-top: 10px;
+    text-align:right;
+    margin-left: 1000px;
+    gap: 10px;
+}
+.footer span{
+    size: 5px;
+    justify-content: center;
+    margin-top: 1px;
+   gap: 10px;
+   margin-left: 150px;
+   margin-right: 100px;
+   color: #555;
+}
 
 
