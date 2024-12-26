@@ -7,18 +7,90 @@
     <link href="./css/style.css" rel="stylesheet">
     <!-- 引入 Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-</head>
 <body>
    <!-- Header -->
+  <style>
+   .text {
+    font-size: 1.0rem; /* 預設文字大小 */
+  }
+  .product-item p{
+    font-size: 1.2rem;
+  }
+  .news h2{
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+  .gifts h1{
+    font-size: 1.8rem;
+  }
+  .gift-item h2{
+    font-size: 1.2rem;
+  }
+  .gift-item p{
+    font-size: 1.0rem;
+  }
+  .footer span{
+    font-size: 1.0rem;
+  }
+  .footer p{
+    font-size: 1.0rem;
+  }
+  .footer img{
+   text-align: right;
+  }
+
+  /* 手機專用樣式 */
+  @media (max-width: 768px) {
+
+.carousel-inner img{
+    height: 360px;
+    width: 50%;
+}
+    .text {
+      font-size: 0.8rem; /* 手機文字稍微縮小 */
+      position: left;
+      margin-left: 0%;
+    }
+    .product-item p{
+    font-size: 1.0rem;
+  }
+  .news h2{
+    font-size: 1.5rem;
+    margin-left: 0%;
+  }
+  .gifts h1{
+    font-size: 1.5rem;
+  }
+  .gift-item h2{
+    font-size: 1.0rem;
+  }
+  .gift-item p{
+    font-size: 0.8rem;
+  }
+  .footer span {
+    font-size: 0.8rem;
+  }
+  .footer p{
+    font-size: 0.8rem;
+    position: center;
+    margin-right: 0%;
+    margin-left: 0%;
+    text-align: right;
+  }
+  .footer img{
+   text-align: right;
+  }
+}
+</style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
    <header class="header">
     <div class="logo">
         <img src="./img/logo 1.png" alt="Mochimochi Logo">
     </div>
   
     <nav class="nav">
-      <div id="modal">
         <ul>
             <li><a href="#top"><img src="./img/search.png"></a></li>
             <li><a href="#news"><img src="./img/bag-shopping.png"></a></li>
@@ -26,6 +98,8 @@
            <li><a href="#about"><img src="./img/bars.png"></a></li>
          </ul>
       </div>
+    </div>
+  </div>
   </nav>
 </header>
   <!-- 輪播容器 -->
@@ -50,6 +124,7 @@
       </div>
     </div>
 
+
     <!-- 左右切換按鈕 -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -61,15 +136,12 @@
     </button>
   </div>
 
-  <!-- 引入 Bootstrap 的 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    
-
+  
     <!-- 最新消息 -->
     <section id="news" class="news">
     <h2>最新消息</h2>
     </section>
-       <div class="newscontainer"></div>
+       <div class="newscontainer">
        <div class="text" >
         <ul>
             <li>2024.4/28 | 吉安店開幕日</li>
@@ -84,6 +156,7 @@
        <p>查看更多
        <button><img src="./img/箭頭.png"></span></button></p>
     </div>
+  </div>
  <!-- 菓子 Section -->
  <section id="products" class="products">
     <h2>菓子</h2>
@@ -118,7 +191,6 @@
         </div>
     </div>
 </section>
-    </section>
     <!-- 輪播容器 -->
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <!-- 圓點指示器 -->
@@ -141,6 +213,7 @@
       </div>
     </div>
 
+
     <!-- 左右切換按鈕 -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -152,10 +225,7 @@
     </button>
   </div>
 
-  <!-- 引入 Bootstrap 的 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    
-
+  
    
 
     <!-- 節慶禮盒 -->
@@ -200,11 +270,15 @@
   </div>
           
        <p ><img src="./img/logo 1.png" alt=""></p>
-      <p>地址｜台北市大安區仁愛路5巷</p><p>統一編號｜24687347</p>
-                <p>電話｜02-8243-6384.</p> <p>mochi © 菓匠きくたろう All rights reserved.</p>
+      <p>地址｜台北市大安區仁愛路5巷</p>
+      <p>統一編號｜24687347</p>
+                <p>電話｜02-8243-6384.</p> 
+                <p>mochi © 菓匠きくたろう All rights reserved.</p>
                
              </div>
     </footer>
+
+    
 
 </body>
 </html>

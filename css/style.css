@@ -74,7 +74,7 @@ img {
    position: left;
 }
 .carousel-inner img{
-    height: 720px;
+    height: 820px;
     width: 100%;
 }
 /* 最新消息 */
@@ -180,13 +180,13 @@ img {
 
 .gifts h1 {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     margin-left: 40px;
     margin-top: 100px;
 }
 .gifts h2{
     text-align: left;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     gap: 3px;
     size: 10px;
     color:#050505;
@@ -222,7 +222,7 @@ img {
 }
 .gift-item img{
   width: 10cm;
-  height: 8cm;
+  height: 6.7cm;
   margin-bottom: 20px;
 }
 
