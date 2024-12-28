@@ -43,7 +43,7 @@
   @media (max-width: 768px) {
 
 .carousel-inner img{
-    height: 360px;
+    height: 300px;
     width: 50%;
 }
     .text {
@@ -51,12 +51,21 @@
       position: left;
       margin-left: 0%;
     }
+    .text p{
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+    
     .product-item p{
     font-size: 1.0rem;
   }
   .news h2{
     font-size: 1.5rem;
     margin-left: 0%;
+    position: left;
+    margin-right: 30px;
   }
   .gifts h1{
     font-size: 1.5rem;
@@ -89,19 +98,100 @@
     <div class="logo">
         <img src="./img/logo 1.png" alt="Mochimochi Logo">
     </div>
-  
-    <nav class="nav">
-        <ul>
-            <li><a href="#top"><img src="./img/search.png"></a></li>
-            <li><a href="#news"><img src="./img/bag-shopping.png"></a></li>
-            <li><a href="#products"><img src="./img/user.png"></a></li>
-           <li><a href="#about"><img src="./img/bars.png"></a></li>
-         </ul>
-      </div>
+
+    <nav class="nav">  
+      <button class="open-btn" data-modal="modal1"><img src="./img/search.png"></button>
+      <button class="open-btn" data-modal="modal2"><img src="./img/user.png"></button>
+      <button class="open-btn" data-modal="modal3"><img src="./img/bag-shopping.png"></button>
+      <button class="open-btn" data-modal="modal4"><img src="./img/bars.png"></button>
+    </nav>
+   
+   
+  <!-- 懸浮視窗 2 -->
+  <div class="modal-overlay" id="modal1">
+    <div class="modal-content" style="position:fixed;top: 100px;height: 200px ;">
+      <h2>SEARCH： <hr></h2>
+      <button class="close-btn" data-modal="modal1">關閉</button>
     </div>
   </div>
-  </nav>
+  <div class="modal-overlay" id="modal2">
+    <div class="modal-content" style="position: fixed;top: 300px;height: 200px;width: 300px;margin-right: 300px;">
+      <h2>MEMBER<hr> <br></h2>
+     
+      <p>基本資料：<br>姓名：<br>電話：<br></p> 
+      <button class="close-btn" data-modal="modal2">關閉</button>
+    </div>
+  </div>
+
+  <!-- 懸浮視窗 3 -->
+  <div class="modal-overlay" id="modal3">
+    <div class="modal-content" style="position: absolute;top: 600px;height: 200px ;">
+      <h2>SHOPPING<hr></h2>
+      <br>
+      <p>目前無商品加入購物車。</p>
+      <button class="close-btn" data-modal="modal3">關閉</button>
+    </div>
+  </div>
+
+  <!-- 懸浮視窗 4 -->
+  <div class="modal-overlay" id="modal4">
+    <div class="modal-content" style="position: absolute;top: 1000px;height: 200px ;margin-left: 600px;">
+      <h2>ABOUT US<hr></h2>
+      <a href="second.html">
+        <button>麻糬</button><hr>
+    </a>
+    <br>
+    <a href="seven.html">
+      <button>季節商品</button><hr>
+    </a>
+    <br>
+    <a href="seven.html">
+      <button>購買須知</button><hr>
+    </a>
+    <br>
+    <a href="index.html">
+      <button>關於我們</button><hr>
+    </a>
+  
+      <button class="close-btn" data-modal="modal4">關閉</button>
+    </div>
+  </div>
+  <script>
+    // 獲取所有開啟按鈕和關閉按鈕
+    const openButtons = document.querySelectorAll('.open-btn');
+    const closeButtons = document.querySelectorAll('.close-btn');
+    const modals = document.querySelectorAll('.modal-overlay');
+
+    // 綁定開啟按鈕事件
+    openButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal');
+        document.getElementById(modalId).style.display = 'flex';
+      });
+    });
+
+    // 綁定關閉按鈕事件
+    closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const modalId = button.getAttribute('data-modal');
+        document.getElementById(modalId).style.display = 'none';
+      });
+    });
+
+    // 點擊背景區域關閉視窗
+    modals.forEach(modal => {
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</div>
+
+</nav>
 </header>
+
   <!-- 輪播容器 -->
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <!-- 圓點指示器 -->
@@ -123,7 +213,8 @@
         <img src="./img/three carousel-01.png" class="d-block w-100" alt="Slide 3">
       </div>
     </div>
-
+   
+  
 
     <!-- 左右切換按鈕 -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -203,13 +294,13 @@
     <!-- 輪播內容 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./img/carousel.png" class="d-block w-100" alt="Slide 1">
+        <img src="./img/carousel-01.jpg" class="d-block w-100" alt="Slide 1">
       </div>
       <div class="carousel-item">
-        <img src="./img/second carousel.png" class="d-block w-100" alt="Slide 2">
+        <img src="./img/carousel-02.jpg" class="d-block w-100" alt="Slide 2">
       </div>
       <div class="carousel-item">
-        <img src="./img/three carousel-01.png" class="d-block w-100" alt="Slide 3">
+        <img src="./img/carousel-03.jpg" class="d-block w-100" alt="Slide 3">
       </div>
     </div>
 
