@@ -66,7 +66,7 @@ img {
   }
 
   .open-btn:hover {
-    background-color:#fff;
+ background-color:#fff;
   }
  
   /* 懸浮視窗背景 */
@@ -107,7 +107,7 @@ img {
 
     }
     .modal-content button:hover {
-        background-color: #fff;
+       color: #fff;
     }
    .modal-content hr{
     color: #666;
@@ -228,7 +228,7 @@ img {
     border-radius: 8px;
 }
 .text button:hover{
-    background-color: #fff;
+    color: #fff;
 }
 .text p{
     margin-top: 60px;
@@ -294,7 +294,8 @@ img {
     border-radius: 8px;
 }
 .product-item button:hover {
-    background:#ddd;
+   color:#ddd;
+   background-color:#666;
 
 }
 
@@ -347,8 +348,9 @@ img {
     color:#333;
     border-radius: 8px;
 }
-.gift-button:hover {
-    background:#ddd;
+.gift-item button:hover {
+    color:#ddd;
+    background-color: #666;
 }
 .gift-item img{
   width: 10cm;
@@ -375,21 +377,20 @@ img {
     text-align: right;
     margin-top: 300px;
 }
-.footer p{
-    margin-top: 10px;
-    text-align:right;
-    margin-left: 1000px;
-    gap: 10px;
-}
-.footer span{
-    size: 5px;
-    justify-content: center;
-    margin-top: 1px;
-   gap: 10px;
-   margin-left: 150px;
-   margin-right: 100px;
-   color: #555;
-}
-
+    .footer span {
+        font-size: 0.8rem;
+        row-gap: 10px;
+        margin-left: 22px;
+      text-align: center;
+        margin-right: 0px;
+        margin-top: 2px;
+      }
+      .footer p{
+        font-size: 0.8rem;
+        position: center;
+        margin:0%;
+        margin-top: 5px;
+        text-align: right;
+      }
 
 
